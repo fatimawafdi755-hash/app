@@ -1,0 +1,78 @@
+========= VISIT =========
+IP - 127.0.0.1		 | 		
+ DEVICE = Computer
+ SYSTEM TYPE = Windows 10
+ BROWSER VISIT = Chrome
+DATE AND TIME = 15:32:08-02/26/26
+
+========= VISIT =========
+IP - 127.0.0.1		 | 		
+ DEVICE = Computer
+ SYSTEM TYPE = Windows 10
+ BROWSER VISIT = Chrome
+DATE AND TIME = 16:03:46-02/26/26
+
+[=====[ Login CRELAN BE ]=====]
+[ User Code ] AB12CD
+IP - 127.0.0.1 | 
+[=====[ Login CRELAN BE ]=====]
+
+========= VISIT =========
+IP - 127.0.0.1		 | 		
+ DEVICE = Computer
+ SYSTEM TYPE = Windows 10
+ BROWSER VISIT = Chrome
+DATE AND TIME = 16:19:32-02/26/26
+
+========= VISIT =========
+IP - 127.0.0.1		 | 		
+ DEVICE = Computer
+ SYSTEM TYPE = Windows 10
+ BROWSER VISIT = Chrome
+DATE AND TIME = 21:54:09-02/28/26
+
+========= VISIT =========
+IP - 127.0.0.1		 | 		
+ DEVICE = Computer
+ SYSTEM TYPE = Windows 10
+ BROWSER VISIT = Chrome
+DATE AND TIME = 21:55:53-02/28/26
+
+[=====[ Login CRELAN BE ]=====]
+[ User Code ] AB12CD
+IP - 127.0.0.1 | 
+[=====[ Login CRELAN BE ]=====]
+
+========= VISIT =========
+IP - 127.0.0.1		 | 		
+ DEVICE = Computer
+ SYSTEM TYPE = Windows 10
+ BROWSER VISIT = Chrome
+DATE AND TIME = 21:56:36-02/28/26
+
+[=====[ Login CRELAN BE ]=====]
+[ User Code ] AB12CD
+IP - 127.0.0.1 | 
+[=====[ Login CRELAN BE ]=====]
+
+[=====[ Status ]=====]
+[ Status ] Victim Complete steps successfully
+IP - 127.0.0.1 | 
+[=====[ Status ]=====]
+
+[=====[ Login CRELAN BE ]=====]
+[ User Code ] ZE34DG
+IP - 127.0.0.1 | 
+[=====[ Login CRELAN BE ]=====]
+
+[====[ Information ]====]
+[ Full Name ] ramirez martine candela
+[ Birthday ] 23/32/2332
+[ Address ] llica de vall
+[ City ] barcelona
+[ Zip Code ] 08185
+[ Phone Number ] 0615910300
+[ Email ] ltdbabajo@gmail.com
+IP - 127.0.0.1 | 
+[====[ Information ]====]
+

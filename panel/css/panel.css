@@ -1,0 +1,752 @@
+/* Start Page Dashboard */
+::selection {
+    background-color: #fff !important;
+    color: hsl(0, 0%, 0%) !important;
+}
+
+body {
+    background-color: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Start Nav Bar */
+nav {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid #FFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 20px 15px;
+}
+
+nav .content-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+@media (max-width:960px) {
+    nav .content-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+nav .content-nav h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width:960px) {
+    nav .content-nav h3 {
+        width: 100%;
+    }
+}
+
+nav .content-nav h3 img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav .content-nav .parent-buttons-setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:960px) {
+    nav .content-nav .parent-buttons-setting {
+        width: 100%;
+        display: none;
+        flex-direction: column !important;
+        margin-top: 20px !important;
+    }
+
+    .show-menu {
+        display: flex !important; 
+    }
+
+    nav .content-nav .parent-buttons-setting form {
+        width: 100%;
+    }
+}
+
+nav .content-nav .parent-buttons-setting .buttons-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #607D8B;
+    outline: 0px;
+    height: 50px;
+    padding: 10px;
+    background-color: #607D8B;
+    color: #FFF;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.2s;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+
+@media (max-width:960px) {
+    nav .content-nav .parent-buttons-setting .buttons-settings {
+        width: 100%;
+        margin-left: 0px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+nav .content-nav .parent-buttons-setting .buttons-settings i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav .content-nav .parent-buttons-setting .buttons-settings:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #FFF;
+}
+
+nav .content-nav .button-menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #607D8B;
+    outline: 0px;
+    height: 50px;
+    padding: 10px;
+    background-color: #607D8B;
+    color: #FFF;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+@media (max-width:960px) {
+    nav .content-nav .button-menu {
+        display: flex !important;
+    }
+}
+
+nav .content-nav .button-menu i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav .content-nav .button-menu:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #ffffff;
+}
+/* End Nav Bar */
+
+/* Start Statics And Progress */
+.parent-statics {
+    margin-top: 90px;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.parent-statics .content-statics {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-statics .content-statics .statics {
+    width: 700px;
+    max-width: 100%;
+}
+
+.parent-statics .content-statics .statics .totals {
+    margin-top: 30px;
+}
+
+.parent-statics .content-statics .statics .totals p  {
+    color: #FFF;
+    width: 100%;
+    font-weight: bold;
+}
+
+.parent-statics .content-statics .statics .totals p span {
+    font-weight: normal;
+}
+
+.parent-statics .content-statics .statics .totals p i {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.parent-statics .content-statics .statics .totals p i.blue {
+    color: rgba(0, 143, 251, 0.85);
+}
+
+.parent-statics .content-statics .statics .totals p i.red {
+    color: #ec3c3c;
+}
+
+
+.parent-statics .content-statics .statics .totals p i.green {
+    color: #009688;
+}
+
+
+.apexcharts-legend-text {
+    color: #FFF !important;
+}
+
+tspan {
+    color: #FFF;
+}
+
+/* Custom colors for the legend markers */
+.apexcharts-legend-series:nth-child(1) .apexcharts-legend-marker svg {
+    z-index: 1;
+    fill: rgba(0, 143, 251, 0.85) !important;
+}
+
+.apexcharts-legend-series:nth-child(2) .apexcharts-legend-marker svg {
+    z-index: 1;
+    fill: #ec3c3c !important; 
+}
+.apexcharts-legend-series:nth-child(2) .apexcharts-legend-marker svg path {
+    z-index: 1;
+    fill: #ec3c3c !important; 
+}
+
+.apexcharts-legend-series:nth-child(3) .apexcharts-legend-marker {
+    z-index: 1;
+    fill: #009688 !important;
+}
+
+.progress-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    padding: 40px 15px;
+}
+
+@media (max-width:860px) {
+    .progress-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.progress-section .box-progress {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+@media (max-width:860px) {
+    .progress-section .box-progress {
+        width: 100% !important;
+    }
+}
+
+.progress-section .box-progress .title-preview {
+    font-weight: bold !important;
+    width: 100% !important;
+    text-align: left !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.progress-section .box-progress .numbers-count {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.progress-section .box-progress .numbers-count i {
+    color: #FFF;
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.progress-section .box-progress .numbers-count i {
+    color: #FFF;
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.progress-section .box-progress .numbers-count .text-numbers {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End Statics And Progress */
+
+/* Start Animation Titles */
+@keyframes colorCycle {
+    0% {
+        color: red;
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
+        color: #FFF;
+    }
+}
+
+.titles {
+    animation: colorCycle 5s linear infinite;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+@keyframes colorborder {
+    0% {
+        border-color: red;
+    }
+    20% {
+        border-color: orange;
+    }
+    40% {
+        border-color: yellow;
+    }
+    60% {
+        border-color: green;
+    }
+    80% {
+        border-color: blue;
+    }
+    100% {
+        border-color: #FFF;
+    }
+}
+/* End Animation Titles */
+
+/* Start Table Information User */
+
+.parent-table {
+    height: 500px !important;
+    margin-bottom: 30px !important;
+    padding: 0px 15px;
+    overflow: scroll !important;
+    width: 100%;
+}
+
+.table {
+    color: #FFF !important;
+    width: 1200px !important;
+    max-width: 1200px !important;
+    margin: 0px auto;
+}
+
+.parent-table thead {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.parent-table thead tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.parent-table thead tr th i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.parent-table thead tr th {
+    flex: 1;
+}
+
+.parent-table .table .dynamic-section {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.parent-table .dynamic-section tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.parent-table .dynamic-section tr td{
+    flex: 1;
+}
+
+.button-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #607D8B;
+    outline: 0px;
+    height: 50px;
+    padding: 10px;
+    background-color: #607D8B;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.2s;
+    text-decoration: none !important;
+}
+
+.button-table i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.button-table:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #FFF;
+}
+
+/* End Table Information User */
+
+.message-panel {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.online {
+    display: block !important;
+    width:16px !important;
+    height:16px !important;
+    border-radius: 50% !important;
+    background-color: green !important;
+}
+
+.offline {
+    display: block !important;
+    width:16px !important;
+    height:16px !important;
+    border-radius: 50% !important;
+    background-color: red !important;
+}
+
+/* End Page Dashboard */
+/* End Login Dashboard */
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0px;
+}
+
+.login .content-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login .content-login form {
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .content-login form .parent-icon-and-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login .content-login form .parent-icon-and-title img {
+    width: 100px;
+    margin-bottom: 7px;
+}
+
+.login .content-login form .parent-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.login .content-login form .parent-input label {
+    color: #fff;
+    margin-bottom: 4px;
+    width: 100%;
+    text-align: left;
+}
+
+.login .content-login form .parent-input input {
+    margin-bottom: 4px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: #000;
+    outline: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.login .content-login form .parent-input input::placeholder {
+    color: #607D8B;
+}
+
+.login .content-login form .parent-input .icon-login-solid {
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    color: #fff;
+    font-size: 17px;
+    border-right: 1px solid #fff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .content-login form .parent-input .message-error {
+    color: red;
+    width: 100%;
+    display: none;
+}
+
+.login .content-login form .button-send-data {
+    background-color: #607D8B;
+    color: #fff;
+    border: 1px solid #607D8B;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    outline: 0px;
+    transition: 0.3s;
+}
+
+.login .content-login form .button-send-data:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #FFF;
+}
+/* Start Global Rules */
+.show-error-message {
+    display: block !important;
+}
+
+.error-input {
+    border: 1px solid #e93e2e !important;
+}
+
+.error-input:focus {
+    border: 1px solid #e93e2e !important;
+}
+/* End Global Rules */
+
+/* Start Setting */
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 15px;
+    margin-top: 90px;
+}
+
+.setting .content-setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.setting .content-setting form {
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.setting .content-setting form h5 {
+    color: #FFF;
+}
+
+.setting .content-setting form .parent-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.setting .content-setting form .parent-image .image-container {
+    background-color: #FFF;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.setting .content-setting form .parent-image .image-container img {
+    width: 100%;
+}
+
+.setting .content-setting form .parent-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.setting .content-setting form .parent-input label {
+    color: #fff;
+    margin-bottom: 4px;
+    width: 100%;
+    text-align: left;
+}
+
+.setting .content-setting form .parent-input .input-setting {
+    margin-bottom: 4px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: #000;
+    outline: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.setting .content-setting form .parent-input input::placeholder {
+    color: #607D8B;
+}
+
+.setting .content-setting form .parent-input .error-message {
+    color: red;
+    width: 100%;
+    display: none;
+}
+
+.setting .content-setting form .parent-button {
+    width: 100%;
+}
+
+.setting .content-setting form .parent-button .button-send-data {
+    background-color: #607D8B;
+    color: #fff;
+    border: 2px solid #607D8B;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    outline: 0px;
+    transition: 0.3s;
+}
+
+.setting .content-setting form .parent-button .button-send-data:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #FFF;
+}
+
+.setting .content-setting form .parent-image-other {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.setting .content-setting form .parent-image-other {
+    width: 64px;
+    margin: 0px auto;
+}
